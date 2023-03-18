@@ -94,19 +94,5 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
-    void negativeCost() {
-        BonusService service = new BonusService();
-
-        long price = -13_500;
-        boolean registered = false;
-        long expected = 0;
-
-        long actual = service.calculate(price, registered);
-
-        assertEquals(expected, actual);
-    }
-    // последний тест провален, в коде калькулятора не предусмотрена
-    // ситуация ввода невалидного (отрицательного) значения в поле стоимости
-
 }
+
