@@ -9,6 +9,6 @@ public class Main {
 
         long bonus = service.calculate(price, registered);
 
-        System.out.println((int)bonus);
+        System.out.println((int) bonus);
     }
 }
